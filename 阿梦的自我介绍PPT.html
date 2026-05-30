@@ -30,7 +30,7 @@
   body.light-bg canvas#bg-dark{opacity:0}
   body.low-power canvas.bg{display:none!important}
   #deck{position:fixed;inset:0;width:10000vw;height:100vh;display:flex;flex-wrap:nowrap;transition:transform .9s cubic-bezier(.77,0,.175,1);z-index:10;will-change:transform}
-  .slide{width:100vw;height:100vh;flex:0 0 100vw;position:relative;padding:6vh 6vw 10vh 6vw;display:flex;flex-direction:column;overflow:hidden}
+  .slide{width:100vw;height:100vh;flex:0 0 100vw;position:relative;padding:5vh 6vw 6vh 6vw;display:flex;flex-direction:column;overflow:hidden}
   .slide.light{color:var(--ink);background:var(--paper)}
   .slide.dark{color:var(--paper);background:var(--ink)}
   .slide::before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;transition:background .7s ease}
@@ -271,21 +271,21 @@
     <div>AI in my workflow</div>
     <div>04 / 05</div>
   </div>
-  <div class="frame" style="padding-top:2.5vh; display:grid; grid-template-rows:auto auto 1fr; min-height:0;">
+  <div class="frame" style="padding-top:1.5vh; display:grid; grid-template-rows:auto auto 1fr; min-height:0;">
     <div class="kicker" data-anim>04｜我现在怎么用 AI</div>
     <h2 class="h-xl" style="margin-bottom:1.5vh; font-size:min(4vw,6.8vh)" data-anim>更像是给自己找了一个<br>随时在线的搭子</h2>
 
-    <div style="display:grid; grid-template-columns:1fr min(42vw,520px); gap:2vw; align-items:stretch; min-height:0;">
+    <div style="display:grid; grid-template-columns:1fr min(40vw,480px); gap:1.5vw; align-items:stretch; min-height:0;">
       <div style="display:flex; flex-direction:column; gap:1vh; justify-content:center;">
-        <div data-anim style="display:grid; grid-template-columns:64px 1fr; gap:2vw; align-items:start; padding:1.8vh 0; border-top:1px solid rgba(var(--ink-rgb),.15)">
-          <div style="font-family:var(--mono); font-size:max(10px,min(.78vw,1.4vh)); letter-spacing:.18em; text-transform:uppercase; opacity:.55; padding-top:.4vh">01</div>
+        <div data-anim style="display:grid; grid-template-columns:48px 1fr; gap:1.2vw; align-items:start; padding:1.4vh 0; border-top:1px solid rgba(var(--ink-rgb),.15)">
+          <div style="font-family:var(--mono); font-size:max(10px,min(.72vw,1.3vh)); letter-spacing:.18em; text-transform:uppercase; opacity:.55; padding-top:.4vh">01</div>
           <div>
             <div class="h-md" style="font-size:min(1.45vw,2.5vh); margin-bottom:.4vh">帮我学</div>
             <p class="body-zh">拆视频脚本、提字幕、总结文章，把一堆散的信息先整理成结构。</p>
           </div>
         </div>
 
-        <div data-anim style="display:grid; grid-template-columns:64px 1fr; gap:2vw; align-items:start; padding:1.8vh 0; border-top:1px solid rgba(var(--ink-rgb),.15)">
+        <div data-anim style="display:grid; grid-template-columns:48px 1fr; gap:1.2vw; align-items:start; padding:1.4vh 0; border-top:1px solid rgba(var(--ink-rgb),.15)">
           <div style="font-family:var(--mono); font-size:max(10px,min(.78vw,1.4vh)); letter-spacing:.18em; text-transform:uppercase; opacity:.55; padding-top:.4vh">02</div>
           <div>
             <div class="h-md" style="font-size:min(1.45vw,2.5vh); margin-bottom:.4vh">帮我想</div>
@@ -293,7 +293,7 @@
           </div>
         </div>
 
-        <div data-anim style="display:grid; grid-template-columns:64px 1fr; gap:2vw; align-items:start; padding:1.8vh 0; border-top:1px solid rgba(var(--ink-rgb),.15)">
+        <div data-anim style="display:grid; grid-template-columns:48px 1fr; gap:1.2vw; align-items:start; padding:1.4vh 0; border-top:1px solid rgba(var(--ink-rgb),.15)">
           <div style="font-family:var(--mono); font-size:max(10px,min(.78vw,1.4vh)); letter-spacing:.18em; text-transform:uppercase; opacity:.55; padding-top:.4vh">03</div>
           <div>
             <div class="h-md" style="font-size:min(1.45vw,2.5vh); margin-bottom:.4vh">帮我做</div>
@@ -301,7 +301,7 @@
           </div>
         </div>
 
-        <div data-anim style="display:grid; grid-template-columns:64px 1fr; gap:2vw; align-items:start; padding:1.8vh 0; border-top:1px solid rgba(var(--ink-rgb),.15); border-bottom:1px solid rgba(var(--ink-rgb),.15)">
+        <div data-anim style="display:grid; grid-template-columns:48px 1fr; gap:1.2vw; align-items:start; padding:1.4vh 0; border-top:1px solid rgba(var(--ink-rgb),.15); border-bottom:1px solid rgba(var(--ink-rgb),.15)">
           <div style="font-family:var(--mono); font-size:max(10px,min(.78vw,1.4vh)); letter-spacing:.18em; text-transform:uppercase; opacity:.55; padding-top:.4vh">04</div>
           <div>
             <div class="h-md" style="font-size:min(1.45vw,2.5vh); margin-bottom:.4vh">帮我打开局面</div>
@@ -310,25 +310,21 @@
         </div>
       </div>
 
-      <div style="display:flex;flex-direction:column;gap:0.6vh;min-width:0;height:100%" data-anim>
-        <figure style="display:flex;flex-direction:column;gap:1.2vh;margin:0;min-width:0;flex:1;min-height:0;">
-          <div style="flex:1;overflow:hidden;border-radius:6px;border:1px solid rgba(var(--ink-rgb),.06);background:#fff;box-shadow:0 12px 40px rgba(0,0,0,.08),0 2px 8px rgba(0,0,0,.04);min-height:0;position:relative;">
-            <img src="images/work-scope-3.png" style="width:100%;height:100%;object-fit:contain;display:block;" alt="AI 工作流成果">
-            <div style="position:absolute;top:12px;left:12px;display:inline-flex;align-items:center;gap:6px;background:rgba(10,10,11,.82);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);color:#f1efea;padding:4px 14px 4px 10px;border-radius:999px;font-family:var(--mono);font-size:11px;letter-spacing:.04em;white-space:nowrap;box-shadow:0 2px 12px rgba(0,0,0,.15);border:1px solid rgba(255,255,255,.08);">
-              <img src="images/codex-icon.png" style="width:16px;height:16px;display:block;flex-shrink:0;" alt="Codex">
-              <span>AI 帮我打造了第一个工作流</span>
-            </div>
+      <div style="display:flex;flex-direction:column;gap:0.2vh;min-width:0;min-height:0;height:100%" data-anim>
+        <div style="flex:1;min-height:0;overflow:hidden;border-radius:6px;border:1px solid rgba(var(--ink-rgb),.06);background:#fff;box-shadow:0 12px 40px rgba(0,0,0,.08),0 2px 8px rgba(0,0,0,.04);position:relative;">
+          <img src="images/work-scope-3.png" style="width:100%;height:100%;object-fit:contain;display:block;" alt="AI 工作流成果">
+          <div style="position:absolute;top:12px;left:12px;display:inline-flex;align-items:center;gap:6px;background:rgba(10,10,11,.82);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);color:#f1efea;padding:4px 14px 4px 10px;border-radius:999px;font-family:var(--mono);font-size:11px;letter-spacing:.04em;white-space:nowrap;box-shadow:0 2px 12px rgba(0,0,0,.15);border:1px solid rgba(255,255,255,.08);">
+            <img src="images/codex-icon.png" style="width:16px;height:16px;display:block;flex-shrink:0;" alt="Codex">
+            <span>AI 帮我打造了第一个工作流</span>
           </div>
-        </figure>
-        <figure style="display:flex;flex-direction:column;gap:1.2vh;margin:0;min-width:0;flex:1;min-height:0;">
-          <div style="flex:1;overflow:hidden;border-radius:6px;border:1px solid rgba(var(--ink-rgb),.06);background:#fff;box-shadow:0 12px 40px rgba(0,0,0,.08),0 2px 8px rgba(0,0,0,.04);min-height:0;position:relative;">
-            <video src="BOH70A-demo.mp4" style="width:100%;height:100%;object-fit:contain;display:block;" autoplay muted loop playsinline></video>
-            <div style="position:absolute;top:12px;left:12px;display:inline-flex;align-items:center;gap:6px;background:rgba(10,10,11,.82);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);color:#f1efea;padding:4px 14px 4px 10px;border-radius:999px;font-family:var(--mono);font-size:11px;letter-spacing:.04em;white-space:nowrap;box-shadow:0 2px 12px rgba(0,0,0,.15);border:1px solid rgba(255,255,255,.08);">
-              <svg style="width:16px;height:16px;display:block;flex-shrink:0;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>
-              <span>首页店铺 demo</span>
-            </div>
+        </div>
+        <div style="flex:1;min-height:0;overflow:hidden;border-radius:6px;border:1px solid rgba(var(--ink-rgb),.06);background:#fff;box-shadow:0 12px 40px rgba(0,0,0,.08),0 2px 8px rgba(0,0,0,.04);position:relative;">
+          <video src="BOH70A-demo.mp4" style="width:100%;height:100%;object-fit:contain;display:block;" autoplay muted loop playsinline></video>
+          <div style="position:absolute;top:12px;left:12px;display:inline-flex;align-items:center;gap:6px;background:rgba(10,10,11,.82);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);color:#f1efea;padding:4px 14px 4px 10px;border-radius:999px;font-family:var(--mono);font-size:11px;letter-spacing:.04em;white-space:nowrap;box-shadow:0 2px 12px rgba(0,0,0,.15);border:1px solid rgba(255,255,255,.08);">
+            <svg style="width:16px;height:16px;display:block;flex-shrink:0;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+            <span>首页店铺 demo</span>
           </div>
-        </figure>
+        </div>
       </div>
     </div>
   </div>
